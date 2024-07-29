@@ -1,3 +1,4 @@
+const PORT = process.env.PORT || 3000
 const express= require("express");
 const app = express();
 const path = require("path");
@@ -25,4 +26,4 @@ app.get("/", function(req,res){
     res.render("index");
 });
 
-server.listen(3000);
+server.listen(PORT);
